@@ -1,0 +1,1050 @@
+@charset "UTF-*8";
+
+/*main color scheme.*/
+
+:root {
+
+    --main-color: #5D9AB2;
+    --accent-color: #BF7785;
+    --dark-color: #2B5565;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+    --grey-color: #ddd;
+    --middle-width: 800px;
+
+}
+
+/* whole page main settings*/
+
+body {
+
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* contentA : hero image configuration*/
+
+.conA {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url(./img/fruits.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    color: var(--text-bright-color);
+    text-align: center;
+
+}
+
+.conA h1 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 3em;
+    margin-left: 0.2em;
+
+}
+
+.conA p {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+
+}
+
+.conA img {
+
+    width: 20%;
+
+}
+
+.conA a {
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF7785;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.conA a:hover {
+
+    background-image: linear-gradient(
+     rgba(255,255,255,0.2),
+     rgba(255,255,255,0.2)
+    );
+
+}
+
+@media (min-width: 768px) {
+
+    .conA h1 {
+
+        font-size: 115px;
+
+    }
+
+    .conA p {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/*Cont ent B (icon+text) */
+
+.conB .container {
+
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+}
+.conB .text {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+
+}
+
+
+.conB h2 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.conB p {
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;;
+
+}
+
+.conB a {
+
+    color: #5D9AB2;
+    color: var(--main-color);
+    text-decoration: none;
+
+}
+
+.conB a:hover {
+
+    text-decoration: underline;
+
+}
+
+.conB .icon {
+
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+    color: #fff;
+    color: var(--icon-color);
+
+}
+
+/*this is the media query section of the css propertyl*/
+
+@media (min-width: 768px)  {
+
+    .conB .container {
+
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .conB .text {
+
+        flex: 1;
+
+    }
+
+}
+
+/*content C section configuration */
+.conC {
+
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+
+}
+
+
+.conC h2 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.conC p {
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+
+}
+
+.conC a {
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF7785;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.conC a:hover {
+
+    background-image: linear-gradient(
+     rgba(255,255,255,0.2),
+     rgba(255,255,255,0.2)
+    );
+
+}
+
+.conC .photo {
+
+    min-height: 200px;
+    background-image: url(./img/note.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.conC .text {
+
+    padding: 20px;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .conC .container {
+
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    .conC .photo {
+
+        flex: 3;
+
+    }
+
+    .conC .text {
+
+        flex: 2;
+        padding: 50px;
+
+    }
+
+}
+
+/*content D section configuration */
+
+.conD .container {
+
+    padding-top: 2px;
+
+}
+
+.conD .text {
+
+    padding: 20px;
+
+}
+
+.conD h2 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.conD p {
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+
+}
+
+.conD a {
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF7785;
+    background-color: var(--accent-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px #888;
+
+}
+
+.conD a:hover {
+
+    background-image: linear-gradient(
+     rgba(255,255,255,0.2),
+     rgba(255,255,255,0.2)
+    );
+
+}
+
+.conD .photo {
+
+    min-height: 200px;
+    background-image: url(./img/life.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.conD .text {
+
+    padding: 20px;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .conD .container {
+
+        display: flex;
+        max-width: 1000px;
+        flex-direction: row-reverse;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+    
+    .conD .photo {
+
+        flex: 0 0 400px;
+
+    }
+
+    .conD .text {
+
+        flex: 1;
+        padding: 50px;
+
+    }
+
+}
+
+
+/*site footer configuration */
+
+footer {
+
+    color: #fff;
+    color: var(--text-bright-color);
+    background-color: #2B5566;
+    background-color: var(--dark-color);
+
+}
+
+footer .container {
+
+    padding: 40px 20px;
+
+}
+
+
+.footA {
+
+    margin-bottom: 30px;
+
+}
+
+.footA h2 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;    
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+
+}
+
+.footA p {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+
+}
+
+.footA a {
+
+    color: inherit;
+    text-decoration: none;
+
+}
+
+/*Footer B configuration*/
+
+.footB  div {
+
+    margin-bottom: 20px;
+
+}
+
+.footB h3 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+
+}
+
+.footB ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.footB a {
+
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+
+}
+
+.footB a:hover {
+
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+@media (min-width: 768px) {
+
+    .footB {
+
+        display: flex;
+
+    }
+
+    .footB div {
+
+        flex: 1;
+
+    }
+
+    .footB div:not(:first-child) {
+
+        margin-left: 40px;
+
+    }
+
+    /*.footB div:first-child {
+
+        
+
+    }*/
+
+}
+
+/*footer credits configuration */
+
+.footC {
+
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+
+}
+
+@media (min-width: 768px) {
+
+    footer .container {
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .footA {
+
+        flex: 0 0 40%;
+
+    }
+
+    .footB {
+
+        flex: 0 0 60%;
+
+    }
+
+    .footC {
+
+        flex: 0 0 100%;
+
+    }
+
+}
+
+/* Footer d section configuration*/
+
+.footD {
+
+    margin-top: 20px;
+
+}
+
+.footD ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+}
+
+.footD a {
+
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+
+}
+
+
+
+.footD a:hover {
+
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+/*header configuration*/
+
+header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.nohero header {
+
+    position: static;
+    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--grey-color);
+
+}
+
+.headA {
+
+    display: inline-block;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #5D9AB2;
+    background: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+/*header b navigation menu configuration*/
+
+.headB ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.headB a {
+
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.headB a:hover {
+
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+@media (min-width: 768px) {
+
+    header .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .headB ul {
+
+        display: flex;
+
+    }
+
+}
+
+/* header c toggle btn configuration */
+
+@media (max-width: 767px) {
+
+    header .container-small {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .headC {
+
+        margin-right: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 28px;
+        opacity: 0.5;
+        cursor: pointer;
+
+    }
+
+    .headC:hover {
+
+        opacity: 0.3;
+
+    }
+
+    .headB {
+
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+
+    .headC {
+
+        display: none;
+
+    }
+
+    .headB {
+
+        display: block !important;
+
+    }
+
+}
+
+/*content page article configuration*/
+
+.post .container {
+
+    padding: 30px 10px;
+    max-width: 800px;
+    max-width: var(--middle-width);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.post h1 {
+
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #BF6A7A;
+    border-left: solid 0.74rem var(--accent-color)
+
+}
+
+.post p {
+
+    font-size: 1rem;
+    line-height: 2;
+
+}
+
+.post img {
+
+    max-width: 100%;
+
+}
+
+
+/*media query basic configuration*/
+
+@media (max-width: 599px) {
+
+    :root {
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+
+    :root {
+
+        font-size: 16px;
+
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    :root {
+
+        font-size: 18px;
+
+    }
+
+}
+
+/* bread section configuration */
+
+.bread ol {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+}
+
+.bread a {
+
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+
+}
+
+.bread a i {
+
+    margin-left: 10px;
+    opacity: 0.3;
+
+}
+
+
+/*
+.bread a::after {
+
+    margin-left: 10px;
+    opacity: 0.3;
+
+}
+
+*/
+
+
+
+.bread a:hover {
+
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+/* introduction page and image and history section css configuratio.*/
+
+
+/*content C section configuration */
+.history {
+
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+
+}
+
+.history .text {
+
+    padding: 20px;
+
+}
+
+
+.history h2 {
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.history .photo {
+
+    min-height: 300px;
+    background-image: url(./img/plant.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media (min-width: 768px) {
+
+    .history .container {
+
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .history .photo {
+
+        flex: 3;
+
+    }
+
+    .history .text {
+
+        flex: 2;
+        padding: 50px;
+
+    }
+
+}
+
+.history table {
+
+    border-collapse: collapse;
+    border-top: solid 1px #ddd;
+    font-size: 0.875rem;
+
+}
+
+.history th,
+.history td {
+
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--grey-color);
+
+}
+
+.history th {
+
+    white-space: nowrap;
+    padding-right: 1rem;
+    text-align: left;
+    word-break: keep-all;
+
+}
+
+/*HTML contact page configuration css section*/
+
+.contact {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border: solid 1px var(--grey-color);
+    text-align: center;
+
+}
+
+.contact span {
+
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--icon-color);
+
+}
+
+.contact h2 {
+
+    margin-top: 0;
+
+}
+
+.contact a {
+
+    font-size: 1.4rem;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+@media (min-width: 768px) {
+
+    .contact-wrap {
+
+        display: flex;
+
+    }
+
+    .contact {
+
+        flex: 1;
+
+    }
+
+    .contact:first-child {
+
+        margin-right: 20px;
+
+    }
+
+}
+
+/* iframe and map configuration*/
+
+.location iframe {
+
+    width: 100%;
+    height: 400px;
+    vertical-align: bottom;
+
+}
+
+.location h2 {
+
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+/* list a html configuration section css*/
+
+.conA.compact {
+
+    height: 450px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)
+    ), url(./img/balloon.jpg);
+
+}
+/* configured till here p.235 resume. finished configuring hero image.*/
